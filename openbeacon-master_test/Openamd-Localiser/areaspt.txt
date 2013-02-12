@@ -1,0 +1,103 @@
+# Generic labels
+nowhere L FromInsideTheHouse
+outside L Outside
+hell L ChattingWithLucifer
+groundfloor L GroundFloor
+roof L LostInSpace
+
+# Second floor labels
+2W L 2ndFloorWalkway
+2Vend L VendorTables
+2Hammocks L HammockSpace
+2LPS L LowPowerSpace
+2AI1 L ArtInstallation1
+2AI2 L ArtInstallation2
+2S1 L StepsToGroundFloor
+2Seg L SegwayTrack
+2CTF L CaptureTheFlag
+2Int L InterviewArea
+2NOC L NetworkOperationsArea
+2Staff L StaffWorkArea
+2Sec L SecurityCenter
+2AMD L AMDWorkArea
+2AV L AVStreamsWorkArea
+2Ether L 2ndFloorNetBar
+2TPh L ProjectTelephreak
+2ID L InfoDesk
+2RS L RadioStatlerBooth
+2VL L VolunteersLounge
+2RW L RadioWorkArea
+2MVCD L MARCHVintageComputers
+2Lock L LockPickingZone
+2HS L HackerspaceVillage
+2VOC L VillageOpsArea
+2VT L VideoTemple
+2GDA L GeneralDemoArea
+2GS L GeneralStore
+2Elev L 2ndFloorExpressElevators
+2RR L 2ndFloorBathrooms
+
+# Second floor as produced via mrwright's editor
+2node0006 B Y < 9.90228013029316 2LPS 2AI2
+2node0004 B Y < 5.0814332247557 2Hammocks 2node0006
+2node0010 B X < 6.77524429967427 2Int 2S1
+2node0018 B X < 11.5960912052117 2AMD 2AV
+2node0016 B Y < 34.1368078175896 2Staff 2node0018
+2node0015 B X < 17.1986970684039 2node0016 2Sec
+2node0013 B Y < 27.1009771986971 2NOC 2node0015
+2node0009 B Y < 23.5830618892508 2node0010 2node0013
+2node0003 B Y < 14.3322475570033 2node0004 2node0009
+2node0002 B X < 21.7589576547231 2node0003 2W
+2node0026 B X < 11.5960912052117 2Ether 2TPh
+2node0025 B X < 17.4592833876222 2node0026 2W
+2node0030 B X < 22.0195439739414 2AI1 2ID
+2node0024 B Y < 42.0846905537459 2node0025 2node0030
+2node0036 B X < 21.7589576547231 2AI1 2RS
+2node0034 B X < 6.64495114006515 2Seg 2node0036
+2node0033 B Y < 56.5472312703583 2node0034 2Seg
+2node0023 B Y < 46.9055374592834 2node0024 2node0033
+2node0001 B Y < 37.6547231270358 2node0002 2node0023
+2node0046 B X < 47.2964169381108 2RR nowhere
+2node0045 B Y < 5.7328990228013 2node0046 nowhere
+2node0043 B X < 30.4885993485342 2W 2node0045
+2node0050 B X < 48.4690553745928 2Elev nowhere
+2node0042 B Y < 10.4234527687296 2node0043 2node0050
+2node0054 B Y < 36.8729641693811 2Vend 2W
+2node0060 B Y < 24.885993485342 2GS 2HS
+2node0065 B X < 61.2377850162866 2VOC nowhere
+2node0059 B X < 56.1563517915309 2node0060 2node0065
+2node0057 B X < 41.5635179153094 2W 2node0059
+2node0053 B X < 38.0456026058632 2node0054 2node0057
+2node0041 B Y < 19.2833876221498 2node0042 2node0053
+2node0071 B Y < 46.514657980456 2VL 2RW
+2node0070 B Y < 56.5472312703583 2node0071 2Seg
+2node0076 B X < 41.3029315960912 2MVCD 2GDA
+2node0080 B X < 41.1726384364821 2Lock 2VT
+2node0079 B Y < 56.5472312703583 2node0080 2CTF
+2node0075 B Y < 49.3811074918567 2node0076 2node0079
+2node0069 B X < 35.4397394136808 2node0070 2node0075
+2node0068 B X < 56.6775244299674 2node0069 nowhere
+2node0040 B Y < 42.6058631921824 2node0041 2node0068
+2node0000 B X < 27.3615635179153 2node0001 2node0040
+
+# 18th floor
+18B L Bell
+18H L 18thFloorWalkway
+18L L Lovelace
+18M L Morse
+18PC L PenttopCenter
+18T L Tesla
+18lu B Y < 14.3 18B 18PC
+18l B Y < 25.9 18lu 18T
+18c B X < 21.6 18H 18L
+18rr B Y < 12.5 18M 18H
+18r B X < 45.3 18c 18rr
+18thfloor B X < 21.4 18l 18r
+
+# Z split to find floor
+zbottom1 B Z > 2.5 nowhere 2node0000
+zbottom2 B Z < 0.5 hell groundfloor
+zbottom B Z < 1.5 zbottom2 zbottom1
+ztop1 B Z < 17.5 nowhere 18thfloor
+ztop B Z > 18.5 roof ztop1
+root B Z < 10 zbottom ztop

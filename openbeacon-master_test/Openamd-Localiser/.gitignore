@@ -1,0 +1,6 @@
+.*.swp
+*.o
+*.dep
+.depcheck
+estimator
+spaceparttree_test

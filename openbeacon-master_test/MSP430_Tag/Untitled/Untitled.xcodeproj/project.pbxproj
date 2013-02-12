@@ -1,0 +1,113 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXFileReference section */
+		2CA0E6CD16674A7B00846786 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		2CA0E6CE16674A7B00846786 /* delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = delay.h; sourceTree = "<group>"; };
+		2CA0E6CF16674A7B00846786 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2CA0E6D016674A7B00846786 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		2CA0E6D116674A7B00846786 /* msp430x2618.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = msp430x2618.c; sourceTree = "<group>"; };
+		2CA0E6D216674A7B00846786 /* nRF_CMD.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nRF_CMD.c; sourceTree = "<group>"; };
+		2CA0E6D316674A7B00846786 /* nRF_CMD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nRF_CMD.h; sourceTree = "<group>"; };
+		2CA0E6D416674A7B00846786 /* nRF_HW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nRF_HW.h; sourceTree = "<group>"; };
+		2CA0E6D516674A7B00846786 /* openbeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openbeacon.h; sourceTree = "<group>"; };
+		2CA0E6D616674A7B00846786 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		2CA0E6D716674A7B00846786 /* timer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = timer.c; sourceTree = "<group>"; };
+		2CA0E6D816674A7B00846786 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		2CA0E6D916674A7B00846786 /* xxtea.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xxtea.c; sourceTree = "<group>"; };
+		2CA0E6DA16674A7B00846786 /* xxtea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xxtea.h; sourceTree = "<group>"; };
+		2CE2826A16AE707600E55BDD /* TI_USCI_I2C_master.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TI_USCI_I2C_master.h; sourceTree = "<group>"; };
+		2CE2826B16AE707600E55BDD /* TI_USCI_I2C_master.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TI_USCI_I2C_master.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2CA0E6B416674A0200846786 = {
+			isa = PBXGroup;
+			children = (
+				2CA0E6CC16674A7B00846786 /* src */,
+			);
+			sourceTree = "<group>";
+		};
+		2CA0E6CC16674A7B00846786 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2CE2826A16AE707600E55BDD /* TI_USCI_I2C_master.h */,
+				2CE2826B16AE707600E55BDD /* TI_USCI_I2C_master.c */,
+				2CA0E6CD16674A7B00846786 /* config.h */,
+				2CA0E6CE16674A7B00846786 /* delay.h */,
+				2CA0E6CF16674A7B00846786 /* main.c */,
+				2CA0E6D016674A7B00846786 /* main.h */,
+				2CA0E6D116674A7B00846786 /* msp430x2618.c */,
+				2CA0E6D216674A7B00846786 /* nRF_CMD.c */,
+				2CA0E6D316674A7B00846786 /* nRF_CMD.h */,
+				2CA0E6D416674A7B00846786 /* nRF_HW.h */,
+				2CA0E6D516674A7B00846786 /* openbeacon.h */,
+				2CA0E6D616674A7B00846786 /* platform.h */,
+				2CA0E6D716674A7B00846786 /* timer.c */,
+				2CA0E6D816674A7B00846786 /* timer.h */,
+				2CA0E6D916674A7B00846786 /* xxtea.c */,
+				2CA0E6DA16674A7B00846786 /* xxtea.h */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		2CA0E6B616674A0200846786 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2CA0E6B916674A0200846786 /* Build configuration list for PBXProject "Untitled" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 2CA0E6B416674A0200846786;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		2CA0E6B716674A0200846786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		2CA0E6B816674A0200846786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CA0E6B916674A0200846786 /* Build configuration list for PBXProject "Untitled" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA0E6B716674A0200846786 /* Debug */,
+				2CA0E6B816674A0200846786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CA0E6B616674A0200846786 /* Project object */;
+}

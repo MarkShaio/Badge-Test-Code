@@ -1,0 +1,17 @@
+
+Here are the files used in my low cost deployment of the Openbeacon system. 
+Most of the code belongs to their respective owners. This is simply a fork of many repositories which I changed to run on alternate hardware.
+
+Crosstools-ng: These are the settings used to create the toolchain targeting the AT91SAM7 for building the basesation files. This file is used by the crosstool-ng toolchain builder. If it fails to load due to version issues you may have to manually insert the settings by opening the file with a text editor. 
+
+Driver: This is the windows driver for the COM port used by the base station.
+
+MSP430_Tag: These are the files running on the MSP430 together with the nRF24l01+ which make up the tag.
+
+Netduino(at91sam7)_Basestation: This contains the base station code to be run on the netduino together with the nRF24l01+ radio package. 
+
+Node-Server: This is a javascript server run by Node.js which listen on the UDP port for traffic and publishes data on MQTT. 
+
+Openamd-localiser: This is a fork of the localised software used in the opened conference. It has been modified such that it can listen to traffic on MQTT and republish the data back on another MQTT channel.Use options -M and -Q when launching to enable mqtt. Look at 'estimator.c' for more info.
+
+Tag Eagle Files: These are work in progress, non-tested eagle tag files.
